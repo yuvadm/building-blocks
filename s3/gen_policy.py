@@ -19,3 +19,7 @@ policy = base64.b64encode(POLICY)
 sig = base64.b64encode(hmac.new(KEY, policy, hashlib.sha1).digest())
 
 print sig
+
+##################
+### Or use: http://s3.amazonaws.com/doc/s3-example-code/post/post_sample.html
+##################

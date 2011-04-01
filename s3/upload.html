@@ -4,13 +4,13 @@
 		<title>S3 POST Upload Form</title>
 	</head>
 	<body>
-		<form action="http://zehimg-test.s3.amazonaws.com/uploads/" method="post" enctype="multipart/form-data">
-      <input type="text" name="key" value="testfile.txt" /><br/>
+    <form action="http://zehimg-test.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
+      <input type="text" name="key" value="testfile2.txt" /><br/>
       <input type="text" name="acl" value="public-read" /><br/>
       <input type="text" name="content-type" value="text/plain" /><br/>
       <input type="hidden" name="AWSAccessKeyId" value="AKIAJBSLAMYWUPXGMGFQ" />
-      <input type="hidden" name="policy" value="eyJleHBpcmF0aW9uIjogIjIwMTItMDEtMDFUMDA6MDA6MDBaIiwKICAiY29uZGl0aW9ucyI6IFsgCiAgICB7ImJ1Y2tldCI6ICJ6ZWhpbWctdGVzdCJ9LCAKICAgIHsiYWNsIjogInB1YmxpYy1yZWFkIn0sCiAgICB7InN1Y2Nlc3NfYWN0aW9uX3JlZGlyZWN0IjogImh0dHA6Ly9sb2NhbGhvc3QvIn0sCiAgICBbInN0YXJ0cy13aXRoIiwgIiRDb250ZW50LVR5cGUiLCAiIl0sCiAgICBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMCwgMTA0ODU3Nl0KICBdCn0=" />
-      <input type="hidden" name="signature" value="CKg6xXZP9bofdlQHQX7Vwz7f8E0=" />
+      <input type="hidden" name="policy" value="ewogICJleHBpcmF0aW9uIjogIjIwMTItMDEtMDFUMTI6MDA6MDAuMDAwWiIsCiAgImNvbmRpdGlvbnMiOiBbCiAgICB7ImJ1Y2tldCI6ICJ6ZWhpbWctdGVzdCIgfSwKICAgIHsiYWNsIjogInB1YmxpYy1yZWFkIiB9LAogICAgWyJzdGFydHMtd2l0aCIsICIkQ29udGVudC1UeXBlIiwgInRleHQvIl0sCiAgICBbInN0YXJ0cy13aXRoIiwgIiRrZXkiLCAiIl0sCiAgXQp9Cg==" />
+      <input type="hidden" name="signature" value="MxQVYEJenbewqiKhLh+/8JCzIKg=" />
       <input name="file" type="file" />
       <input name="submit" value="Upload" type="submit" />
     </form>
